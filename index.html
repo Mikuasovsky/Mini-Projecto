@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan's Haven (Ecommerce Website Design)</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!------ header-of-the-website ------>
 
-    <div class="header">
+<div class="header">
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <h1>Jordan's Haven <img src="Images/Logo.png" width="30px" alt="Logo"> </h1>
+                <h1>Jordan's Haven <img src="/images/logo/logo.png" width="30px" alt="Logo"> </h1>
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li><a href="">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">About</a></li>
@@ -23,6 +25,9 @@
                 
                 </ul>
             </nav>
+            <img src="/images/icons/shopping-cart.png" alt="Shopping-Cart" width="25px">
+            <img src="/images/icons/menu-bar.png" alt="menu-bar" class="menu-bar" 
+            onclick="menutoggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -31,14 +36,168 @@
                 <a href="" class="button">Buy Now &#8680;</a>
             </div>
             <div class="col-2">
-                <img src="/Images/air-jordan-1.png" alt="Air Jordan's 1">
+                <img src="/images/air-jordan-1/air-jordan-1.png" alt="Air Jordan's 1">
             </div>
         </div>
     </div>
 </div>
 
+<!------ collabs ------>
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="/images/collabs/jordan-4-lv.jpeg" alt="Jordan-4-LV">
+            </div>
+            <div class="col-3">
+                <img src="/images/collabs/jordan-1-timber.jpeg" alt="Jordan-1-Timber">
+            </div>
+            <div class="col-3">
+                <img src="/images/collabs/jordan-1-nutella.jpeg" alt="Jordan-4-Nutella">
+            </div>
+            <h3 class="collabs"><u>"Collaborate for greatness"</u></h3>
+            <a href="" class="button">Explore &#8680;</a>
+        </div>
+    </div>
+</div>
 
+<!------ feature-products ------>
 
+<div class="small-container">
+    <h2 class="title">Featured Products:</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="/images/featured-products/jordan-4-retro.png" alt="Jordan-4-Retro">
+            <h4>Jordan 4 Retro - "White Cement"</h4>
+            <p>1100€</p>
+        </div>
+        <div class="col-4-1">
+            <img src="/images/featured-products/travis.png" alt="Jordan-1-Travis">
+            <h4>Jordan 1 X Travis - High</h4>
+            <p>2100€</p>
+        </div>
+        <div class="col-4">
+            <img src="/images/featured-products/jordan-11-retro.png" alt="Jordan-11-Low">
+            <h4>Jordan 11 Low - "White Cement"</h4>
+            <p>420€</p>
+        </div>
+        <div class="col-4-2">
+            <img src="/images/featured-products/jordan-10-retro.png" alt="Jordan-10-Retro">
+            <h4>Jordan 10 Retro - "Light Smoke"</h4>
+            <p>190€</p>
+        </div>
+    </div>
 
+    <!------ hot-drop-products ------>
+
+    <h2 class="title">Hot-Drop Products:</h2>
+    <div class="row">
+        <div class="col-5">
+            <img src="/images/hot-drop-products/socks.png" alt="Jordan-Socks">
+            <h4>Jordan Socks Pack</h4>
+            <p>1100€</p>
+        </div>
+        <div class="col-5">
+            <img src="/images/hot-drop-products/backpack.png" alt="Jordan-Backpack">
+            <h4>Jordan Backpack - "Grey"</h4>
+            <p>2100€</p>
+        </div>
+        <div class="col-5">
+            <img src="/images/hot-drop-products/ball.png" alt="Jordan-Basketball">
+            <h4>Jordan Classic Basketball</h4>
+            <p>420€</p>
+        </div>
+        <div class="col-5">
+            <img src="/images/hot-drop-products/jersey.png" alt="Jordan-Jersey">
+            <h4>Jordan "Chicago Bulls" Jersey - "White"</h4>
+            <p>190€</p>
+        </div>
+        <div class="col-5-1">
+            <img src="/images/hot-drop-products/cap.png" alt="Jordan-Space-Jam-Cap">
+            <h4>Jordan "Space Jam" Cap</h4>
+            <p>1100€</p>
+        </div>
+        <div class="col-5-2">
+            <img src="/images/hot-drop-products/jordan-4-retro-.png" alt="Jordan-4-Retro-Fire-Red">
+            <h4>Jordan 4 Retro - "Fire Red"</h4>
+            <p>2100€</p>
+        </div>
+        <div class="col-5">
+            <img src="/images/hot-drop-products/red-shorts.png" alt="Jordan-Red-Shorts">
+            <h4>Jordan Classic Red Shorts</h4>
+            <p>420€</p>
+        </div>
+        <div class="col-5">
+            <img src="/images/hot-drop-products/bulls-shorts.png" alt="Jordan-Bulls-Shorts">
+            <h4>Jordan "Chicago Bulls" Shorts - "White"</h4>
+            <p>190€</p>
+        </div>
+    </div>
+</div>
+
+<!------ brands ------>
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="/images/icons/brands/jordan.png" alt="Jordan-Logo">
+                </div>
+                <div class="col-6">
+                    <img src="/images/icons/brands/lv.png" alt="LV-Logo">
+                </div>
+                <div class="col-6">
+                    <img src="/images/icons/brands/timberland.png" alt="Timberland-Logo">
+                </div>
+                <div class="col-6">
+                    <img src="/images/icons/brands/nutella.png" alt="Nutella-Logo">
+                </div>
+                <div class="col-6">
+                    <img src="/images/icons/brands/supreme.png" alt="Supreme-Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------ footer ------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Jordan's Haven <img src="/images/air-jordan-1/air-jordan-1.png" width="50px" alt="Logo" class="logo1"></h3>
+                    <p>"Step into Style, Stride with Confidence"</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow Us:</h3>
+                    <ul>
+                        <li>Instagram <i class="fa-brands fa-instagram" style="color: #e21212;"></i></li>
+                        <li>Facebook <i class="fa-brands fa-facebook" style="color: #d73619;"></i></li>
+                        <li>Twitter <i class="fa-brands fa-twitter" style="color: #ff1414;"></i></li>
+                        <li>Youtube <i class="fa-brands fa-youtube" style="color: #cc1919;"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+<!------ toggle-menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>
