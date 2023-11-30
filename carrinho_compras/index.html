@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/carrinho_compras/sytle.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <h1>Jordan's Haven</h1>
+    </header>
+
+    <main>
+        <section class="carrinho">
+            <h2><u>Shopping Cart</u> :</h2>
+            <ul id="carrinho-lista">
+                <!-- Lista de itens no carrinho -->
+            </ul>
+            <p id="total">Total: R$0,00</p>
+        
+
+            <section class="produtos">
+            <!-- Lista de produtos -->
+                <div class="produto" data-id="1">
+                    <h2>Produto 1</h2>
+                    <p>Descrição do Produto 1.</p>
+                    <p>Preço: R$50,00</p>
+                    <button class="adicionar-ao-carrinho">Adicionar ao Carrinho</button>
+            </div>
+
+                <div class="produto" data-id="2">
+                    <h2>Produto 2</h2>
+                    <p>Descrição do Produto 2.</p>
+                    <p>Preço: R$30,00</p>
+                    <button class="adicionar-ao-carrinho">Adicionar ao Carrinho</button>
+                </div>
+
+            <!-- Mais produtos aqui -->
+            </section>
+        </section>
+        </main>
+
+        <script src="script.js"></script>
+</body>
+</html>
