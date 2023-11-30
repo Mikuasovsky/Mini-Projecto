@@ -8,10 +8,10 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    color: black;
     text-align: center;
     padding: 1em;
+    background: radial-gradient(#fff,#a78888)
 }
 
 main {

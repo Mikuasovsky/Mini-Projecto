@@ -25,9 +25,8 @@
                 
                 </ul>
             </nav>
-            <img src="/images/icons/shopping-cart.png" alt="Shopping-Cart" width="25px">
-            <img src="/images/icons/menu-bar.png" alt="menu-bar" class="menu-bar" 
-            onclick="menutoggle()">
+            <img id="myImage" src="/images/icons/shopping-cart.png" alt="Clickable Image">
+            <img src="/images/icons/menu-bar.png" alt="menu-bar" class="menu-bar" width="25px" onclick="menutoggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -198,6 +197,18 @@
                 MenuItems.style.maxHeight = "0px";
             }
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the image and clickable element by their IDs
+            const myImage = document.getElementById("myImage");
+
+            // Add click event listeners
+            myImage.addEventListener("click", function () {
+                // Redirect to another page
+                window.location.href = "http://127.0.0.1:5500/carrinho_compras/index.html";
+            });
+        });
     </script>
+    
 </body>
 </html>
