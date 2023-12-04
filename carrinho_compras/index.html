@@ -7,38 +7,33 @@
     <title>Shopping Cart</title>
 </head>
 <body>
-    <header>
-        <h1>Jordan's Haven</h1>
+    <header class="logo">
+        <h1>Jordan's Haven <img src="/images/logo/logo.png" width="50px" alt="Logo"></h1>
     </header>
 
-    <main>
-        <section class="carrinho">
+    <main>ç
+        <section class="cart">
             <h2><u>Shopping Cart</u> :</h2>
-            <ul id="carrinho-lista">
-                <!-- Lista de itens no carrinho -->
-            </ul>
-            <p id="total">Total: R$0,00</p>
-        
-
-            <section class="produtos">
-            <!-- Lista de produtos -->
-                <div class="produto" data-id="1">
-                    <h2>Produto 1</h2>
-                    <p>Descrição do Produto 1.</p>
-                    <p>Preço: R$50,00</p>
-                    <button class="adicionar-ao-carrinho">Adicionar ao Carrinho</button>
-            </div>
-
-                <div class="produto" data-id="2">
-                    <h2>Produto 2</h2>
-                    <p>Descrição do Produto 2.</p>
-                    <p>Preço: R$30,00</p>
-                    <button class="adicionar-ao-carrinho">Adicionar ao Carrinho</button>
+            <ul id="cart-list">
+        <section class="products">
+                <div class="product" data-id="1">
+                    <img src="/Images/air-Jordan-1/air-jordan-1.png" alt="air-jordan-1" width="150px">
+                    <p> Air Jordan's 1 - "Varsity Red" </p>
+                    <p>200€</p>
+                    <button class="add-to-cart">Product Page</button>
                 </div>
 
-            <!-- Mais produtos aqui -->
+                <div class="product" data-id="2">
+                    <img src="/Images/hot-drop-products/jersey.png" alt="jordan-jersey" width="150px">
+                    <p>Jordan "Chicago Bulls" Jersey - "White"</p>
+                    <p>190€</p>
+                    <button class="add-to-cart">Product Page</button>
+                </div>
             </section>
+            <p id="total">Total: 390€</p>
         </section>
+            </ul>
+            
         </main>
 
         <script src="script.js"></script>

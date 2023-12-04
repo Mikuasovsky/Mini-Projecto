@@ -1,16 +1,24 @@
+@font-face {
+    font-family: Smooch;
+    src:url(/Fonts/static/SmoochSans-ExtraLight.ttf);
+}
+
+.logo{
+    font-family: Smooch;
+    font-size: 25px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
     color: black;
     text-align: center;
-    padding: 1em;
     background: radial-gradient(#fff,#a78888)
 }
 
@@ -21,43 +29,44 @@ main {
     margin: 20px;
 }
 
-.produtos, .carrinho {
-    width: 100%;
+.cart {
+    
+    border-radius: 10px;
+    border: red;
 }
 
-.produto {
-    border: 1px solid #ccc;
+.product {
     padding: 10px;
     margin-bottom: 10px;
     max-width: 200px;
     display: inline-block;
 }
 
-.carrinho {
+.cart {
     border: 1px solid #333;
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.adicionar-ao-carrinho {
+.add-to-cart {
     background-color:red;
     color: white;
-    border: none;
     padding: 5px 10px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
     transition: background 0.5s;
+    border-radius: 10px;
 }
 
-.adicionar-ao-carrinho:hover {
+.add-to-cart:hover {
     background-color: #000000;
 }
 
-[data-id="2"]{
-    margin-left: 100px;
+.flames{
+    display: flex;
+    align-items: end;
 }
