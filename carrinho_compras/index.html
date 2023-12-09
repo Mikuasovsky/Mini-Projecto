@@ -1,41 +1,181 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/carrinho_compras/sytle.css">
-    <title>Shopping Cart</title>
+    <title>Jordan's Haven (Ecommerce Website Design)</title>
+    <link rel="stylesheet" type="text/css" href="/carrinho_compras/sytle.css">
+    <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="logo">
-        <h1>Jordan's Haven <img src="/images/logo/logo.png" width="50px" alt="Logo"></h1>
-    </header>
 
-    <main>ç
-        <section class="cart">
-            <h2><u>Shopping Cart</u> :</h2>
-            <ul id="cart-list">
-        <section class="products">
-                <div class="product" data-id="1">
-                    <img src="/Images/air-Jordan-1/air-jordan-1.png" alt="air-jordan-1" width="150px">
-                    <p> Air Jordan's 1 - "Varsity Red" </p>
-                    <p>200€</p>
-                    <button class="add-to-cart">Product Page</button>
-                </div>
 
-                <div class="product" data-id="2">
-                    <img src="/Images/hot-drop-products/jersey.png" alt="jordan-jersey" width="150px">
-                    <p>Jordan "Chicago Bulls" Jersey - "White"</p>
-                    <p>190€</p>
-                    <button class="add-to-cart">Product Page</button>
+<!------ header-of-the-website ------>
+        <!------ logo-and-nav-bar ------>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Jordan's Haven <img src="/images/logo/logo.png" width="30px" alt="Logo" id="homebutton"> </h1>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li id="home"><a >Home</a></li>    
+                    <li><a >Products</a></li>
+                    <li><a >About</a></li>
+                    <li><a>Contacts</a></li>
+                
+                </ul>
+            </nav>
+            <img id="myImage" src="/images/icons/shopping-cart.png" alt="Clickable Image">
+            <img src="/images/icons/menu-bar.png" alt="menu-bar" class="menu-bar" width="25px" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+
+<!------ card item details ------>
+        <div class="small-container cart-page">
+
+            <table class="table">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="/Images/air-Jordan-1/air-jordan-1.png" alt="air-jordan-1">
+                        <div>
+                            <p>Air Jordan's 1 High - "Chicago"</p>
+                            <small>Price: 200€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>200€</td>
+                </tr>
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="/Images/hot-drop-products/jordan-4-retro-.png" alt="air-jordan-4">
+                        <div>
+                            <p>Jordan 4 Retro - "Fire Red"</p>
+                            <small>Price: 600€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>800€</td>
+                </tr>
+                <tr>
+                    <td><div class="cart-info">
+                        <img src="/Images/featured-products/Jordan-11-Retro.png" alt="air-jordan-11">
+                        <div>
+                            <p>Air Jordan's 1 High - "Chicago"</p>
+                            <small>Price: 420€</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>1220€</td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>1220€</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>27.20€</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>1247.20€</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+<!------ footer ------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Jordan's Haven <img src="/images/air-jordan-1/air-jordan-1.png" width="50px" alt="Logo" class="logo1"></h3>
+                    <p>"Step into Style, Stride with Confidence"</p>
                 </div>
-            </section>
-            <p id="total">Total: 390€</p>
-        </section>
-            </ul>
+                <div class="footer-col-2">
+                    <h3>Follow Us:</h3>
+                    <ul>
+                        <li>Instagram <i class="fa-brands fa-instagram" style="color: #e21212;"></i></li>
+                        <li>Facebook <i class="fa-brands fa-facebook" style="color: #d73619;"></i></li>
+                        <li>Twitter <i class="fa-brands fa-twitter" style="color: #ff1414;"></i></li>
+                        <li>Youtube <i class="fa-brands fa-youtube" style="color: #cc1919;"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+<!------ toggle-menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if( MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            const myImage = document.getElementById("myImage");
+
+          
+            myImage.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/carrinho_compras/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
             
-        </main>
+            const home = document.getElementById("home");
 
-        <script src="script.js"></script>
+            
+            home.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/página_inicial/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const homebutton = document.getElementById("homebutton");
+
+            
+            homebutton.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/página_inicial/index.html";
+            });
+        });
+    </script>
 </body>
 </html>
