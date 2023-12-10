@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan's Haven (Ecommerce Website Design)</title>
+    <link rel="stylesheet" type="text/css" href="/página_produto/style.css">
+    <script src="https://kit.fontawesome.com/dada07158c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<!------ header-of-the-website ------>
+        <!------ logo-and-nav-bar ------>
+
+<div class="header">
+   <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Jordan's Haven <img src="/images/logo/logo.png" width="30px" alt="Logo" id="homebutton"> </h1>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li id="home"><a >Home</a></li>    
+                    <li><a >Products</a></li>
+                    <li><a >About</a></li>
+                    <li><a>Contacts</a></li>
+                
+                </ul>
+            </nav>
+            <img id="myImage" src="/images/icons/shopping-cart.png" alt="Clickable Image">
+            <img src="/images/icons/menu-bar.png" alt="menu-bar" class="menu-bar" width="25px" onclick="menutoggle()">
+        </div>
+    </div><hr>
+</div>
+
+<!------ product-details ------>
+
+    <div class="small-container">
+        <div class="row-1">
+            <div class="col-1">
+                <img src="/Images/air-Jordan-1/air-jordan-1.png" alt="air-jordan-1" width="400px" class="product">
+            </div>
+            <div class="col-1">
+                <img src="/Images/air-Jordan-1/576959_06_jpg_850x.webp" alt="air-jordan-1" width="400px" class="product">
+            </div>
+            <div class="col-1">
+                <img src="/Images/air-Jordan-1/13641_08.jpg.jpeg" alt="air-jordan-1" width="450px" class="product-2">
+            </div>
+        </div>
+            <div class="col-2">
+                <h5>Men's</h5>
+                <h1>Air Jordan's 1 High - "Chicago"</h1>
+                <h4>200€</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                </select>
+                <input type="number" value="1">
+                <a id="mybutton" class="button">Add To Cart</a>
+
+                <h3>Product Details :</h3>
+                <br>
+                <p>The Classic Air Jordan 1 Chicago boasts a striking colorway that effortlessly 
+                    blends black, white, and varsity red, creating a bold and energetic design that stands out 
+                    on and off the court. The high-top silhouette not only provides ankle support but also exudes a retro flair that 
+                    transcends trends, making it a must-have for sneaker enthusiasts and fashion aficionados alike.</p>
+            </div>
+        </div>
+    </div>
+<!------ footer ------>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Jordan's Haven <img src="/images/air-jordan-1/air-jordan-1.png" width="50px" alt="Logo" class="logo1"></h3>
+                <p>"Step into Style, Stride with Confidence"</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Follow Us:</h3>
+                <ul>
+                    <li>Instagram <i class="fa-brands fa-instagram" style="color: #e21212;"></i></li>
+                    <li>Facebook <i class="fa-brands fa-facebook" style="color: #d73619;"></i></li>
+                    <li>Twitter <i class="fa-brands fa-twitter" style="color: #ff1414;"></i></li>
+                    <li>Youtube <i class="fa-brands fa-youtube" style="color: #cc1919;"></i></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<!------ toggle-menu ------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the image and clickable element by their IDs
+        const myImage = document.getElementById("myImage");
+
+        // Add click event listeners
+        myImage.addEventListener("click", function () {
+            // Redirect to another page
+            window.location.href = "http://127.0.0.1:5500/carrinho_compras/index.html";
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+            
+        const home = document.getElementById("home");
+
+        
+        home.addEventListener("click", function () {
+            
+            window.location.href = "http://127.0.0.1:5500/página_inicial/index.html";
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        
+        const homebutton = document.getElementById("homebutton");
+
+        
+        homebutton.addEventListener("click", function () {
+            
+            window.location.href = "http://127.0.0.1:5500/página_inicial/index.html";
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        
+        const mybutton = document.getElementById("mybutton");
+
+        
+        mybutton.addEventListener("click", function () {
+            
+            window.location.href = "http://127.0.0.1:5500/carrinho_compras/index.html";
+        });
+    });
+</script>
+
+</body>
+</html>

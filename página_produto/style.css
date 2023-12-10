@@ -30,6 +30,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
+    cursor: pointer;
 }
 
 #myImage{
@@ -57,16 +58,6 @@ nav ul li{
     margin-right: 20px;
 }
 
-a{
-    text-decoration: none;
-    color:#555;
-    cursor: pointer;
-}
-
-p{
-    color:#555;
-}
-
 .container{
     max-width: 1300px;
     margin:auto;
@@ -74,80 +65,94 @@ p{
     padding-right: 15px;
 }
 
+/* ------ product-details ------*/
+
+a{
+    text-decoration: none;
+    color:#555;
+}
+
+.product{
+    padding-top: 50px;
+}
+
+.product-2{
+    margin-top: 60px;
+}
 .row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
- 
-.header .row{
-    margin-top: 70px;
+    justify-content: space-between;
 }
 
-/*------ card-item-details ------*/
-
-.cart-page{
-    margin: 80px auto;
-    max-width: 1300px;
-    background: radial-gradient(#fff,#a78888);
-}
-.table{
-    width: 100%;
-    border-collapse: collapse;
-}
-.cart-info{
-    display: flex;
-    flex-wrap: wrap;
-}
-.cart-info img{
-    margin-bottom: 30px;
+.button{
+    display: inline-block;
+    background: #942416;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
     cursor: pointer;
 }
-.table th{
-    text-align: left;
-    padding: 5px;
-    color: #fff;
-    background: black;
-    font-weight: normal;
-}
-.table td{
-    padding: 10px 5px;
 
-}
-.table td input{
-    width: 40px;
-    height: 30px;
-    padding: 5px; 
-}
-.table td a{
-    color: red;
-    font-size: 12px;
-    
-}
-.table td img{
-  width: 80px;
-  margin-right: 10px;
+.button:hover {
+    background-color: #563434;
 }
 
-.total-price{
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+.small-container select{
+    border-radius: 10px;
+    border-color: red;
+
+}
+.small-container input{
+    border-radius: 10px;
+    border-color: red;
+}
+
+.small-container h1{
+    font-family: Teko;
+    font-size: 50px;
+}
+
+.small-container p{
+    padding-bottom: 120px;
+    font-family: Caveat;
+    font-size: 20px;
+}
+
+.small-container h5{
+    padding-top: 30px;
+}
+
+.row-1{
+    border-radius: 10px;
+    border: 2px solid red;
+    width: 1300px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-.total-price table {
-    border-top: 3px solid red;
-    width: 100%;
-    max-width: 382px;
-    margin-bottom: 157px;
+h3{
+    font-family: Teko;
+    font-size: 30px;
 }
 
-td:last-child{
-    text-align: right;
+.col-1{
+    cursor: pointer;
+    transition: transform 0.5s;
 }
 
-th:last-child{
-    text-align: right;
+.col-1:hover{
+    transform: translateY(-5px);
 }
 /*------ footer ------*/
 
@@ -228,10 +233,6 @@ ul{
         display: block;
         cursor: pointer;
     }
-
-    .cart-info p{
-        display: none;
-    }
 }
 
 /*------ media query for less than 600 screen size ------*/
@@ -245,9 +246,6 @@ ul{
         flex-basis: 100%;
     }
 }
-
-
-
 
 
 

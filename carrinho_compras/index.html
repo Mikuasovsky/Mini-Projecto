@@ -14,7 +14,7 @@
         <!------ logo-and-nav-bar ------>
 
 <div class="header">
-    <div class="container">
+   <div class="container">
         <div class="navbar">
             <div class="logo">
                 <h1>Jordan's Haven <img src="/images/logo/logo.png" width="30px" alt="Logo" id="homebutton"> </h1>
@@ -31,7 +31,7 @@
             <img id="myImage" src="/images/icons/shopping-cart.png" alt="Clickable Image">
             <img src="/images/icons/menu-bar.png" alt="menu-bar" class="menu-bar" width="25px" onclick="menutoggle()">
         </div>
-    </div>
+    </div><hr>
 </div>
 
 <!------ card item details ------>
@@ -45,9 +45,9 @@
                 </tr>
                 <tr>
                     <td><div class="cart-info">
-                        <img src="/Images/air-Jordan-1/air-jordan-1.png" alt="air-jordan-1">
+                        <img src="/Images/air-Jordan-1/air-jordan-1.png" alt="air-jordan-1" id="myproduct">
                         <div>
-                            <p>Air Jordan's 1 High - "Chicago"</p>
+                            <p>Air Jordan's 1 High - "Chicago" - Size 12</p>
                             <small>Price: 200€</small>
                             <br>
                             <a href="">Remove</a>
@@ -61,7 +61,7 @@
                     <td><div class="cart-info">
                         <img src="/Images/hot-drop-products/jordan-4-retro-.png" alt="air-jordan-4">
                         <div>
-                            <p>Jordan 4 Retro - "Fire Red"</p>
+                            <p>Jordan 4 Retro - "Fire Red" - Size 10</p>
                             <small>Price: 600€</small>
                             <br>
                             <a href="">Remove</a>
@@ -75,7 +75,7 @@
                     <td><div class="cart-info">
                         <img src="/Images/featured-products/Jordan-11-Retro.png" alt="air-jordan-11">
                         <div>
-                            <p>Air Jordan's 1 High - "Chicago"</p>
+                            <p>Jordan 11 Low - "White Cement" - Size 8</p>
                             <small>Price: 420€</small>
                             <br>
                             <a href="">Remove</a>
@@ -174,6 +174,17 @@
             homebutton.addEventListener("click", function () {
                 
                 window.location.href = "http://127.0.0.1:5500/página_inicial/index.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            const myproduct = document.getElementById("myproduct");
+
+            
+            myproduct.addEventListener("click", function () {
+                
+                window.location.href = "http://127.0.0.1:5500/página_produto/index.html";
             });
         });
     </script>
